@@ -1,0 +1,158 @@
+.Heading{
+
+	margin-left: auto;
+	margin-right: auto;
+
+	padding-left: 199px;
+	padding-bottom: 79px;
+	padding-top: 10px;
+
+
+	background-color: #ffffff;
+
+	text-align: center;
+
+	color: #999999;
+	
+	border-bottom: 2px solid #cccccc;
+
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.abname{
+	float: left;
+	background-color: rgb(17, 165, 163);
+	width: 14%;
+	color: #ffffff;
+}
+
+.ababout{
+float: left;
+width: 10%;
+border-right: 2px solid #cccccc;
+padding-left: 400px;
+margin-top: 25px;
+height: 25px;
+}
+
+.abcontact{
+float: left;
+width: 10%;
+border-right: 2px solid #cccccc;
+margin-top: 25px;
+height: 25px;
+padding-left: 25px;
+}
+
+.abportfolio{
+float: left;
+width: 10%;
+border-right: 2px solid #cccccc;
+margin-top: 25px;
+height: 25px;
+padding-left: 25px;
+}
+
+a{
+	color: #999999;
+	text-decoration: none;
+}
+
+.wrapper{
+	margin-left: auto;
+	margin-right: auto;
+
+	max-width: 960px;
+
+	padding-right: 10px;
+	padding-left: 10px;
+
+	color: #666666;
+	background-color: #ffffff;
+
+	border: 2px solid #dddddd;
+
+	font-size: 18px;
+
+	line-height: 2;
+}
+
+.meimg{
+	float: left;
+
+	padding: 10px;
+}
+
+
+
+.img1{
+	position: relative;
+
+	width: 50%;
+}
+
+.img2{
+	position: relative;
+
+	width: 50%;
+}
+
+.img1 img{
+	width: 50%;
+	height: auto;
+}
+
+.img2 img{
+	width: 50%;
+	height: auto;
+}
+
+.imgs .btn{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-172%, -48%);
+	-ms-transform: translate(-50%, -50%);
+
+	color: #ffffff;
+	background-color: rgb(17, 165, 163);
+
+	font-size: 16px;
+
+	padding: 12px 24px;
+
+	border: none;
+
+	cursor: pointer;
+
+	border-radius: 10px;
+}
+
+
+.body{
+	background-image: url(../images/what-the-hex/what-the-hex.png);
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 30px;
+	min-height: calc(100vh - 70px);
+	/* margin-bottom: -50px; */
+}
+
+.sub{
+	color: rgb(17, 165, 163);
+	font-size: 30px;
+	border-bottom: 2px solid #ddd;
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer{
+	height: 50px;
+	text-align: center;
+
+	background-color: #666666;
+	color: #ffffff;
+
+	border-top: 4px solid rgb(18, 143, 141);
+
+	font-family: 'Times New Roman', Times, serif;
+}
