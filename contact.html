@@ -8,82 +8,60 @@
 	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-		<div class="Heading">
 
-				<div class="abname">
-					<header> <h1>Cyrus Keo</h1> </header>
-				</div>
-		
-				<div class="ababout" id="button">
-					<a href="index.html">About Me</a>
-				</div>
-		
-				<div class="abportfolio" id="button">
-					<a href="portfolio.html">Portfolio</a>
-				</div>
-		
-				<div class="abcontact" id="button">
-					<a href="contact.html">Contact</a>
-				</div>
-		
+	<header class="header-container">
+
+			<div class="logo">
+				<a href="index.html" title="Cyrus Keo"> Cyrus Keo</a>
 			</div>
-		
-			<div class="body">
-		
-				<div class="wrapper">
-				
+
+			<nav>
+				<ul>
+					<li><a href="index.html" title="About Me">About Me</a></li>
+					<li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+					<li><a href="contact.html" class="active" title="Contact">Contact</a></li>
+				</ul>
+			</nav>
+	</header>
+
+		<div class="body">
+
+			<div class="wrapper">
+
+				<div>
+					<header class="sub">Contact</header>
+
 					<div>
-						<header class="sub">Contact</header>
+						<form action="mailto:cyruskeo99@gmail.com" method="POST" enctype="text/plain">
 
-						<div>
-							<form action="mailto:cyruskeo99@gmail.com" method="POST" enctype="text/plain">
+							Name:
+							<input type="text" name="Name"><br>
 
-								Name:<br>
-								<input type="text" name="Name"><br>
+							E-mail:
+							<input type="text" name="E-mail"><br>
 
-								E-mail:<br>
-								<input type="text" name="E-mail"><br>
+							Comment:<br>
+							<input type="text" name="Comment" size="75">
 
-								Comment:<br>
-								<input type="text" name="Comment" size="75" style="height: 200px;"><br><br>
+							<br>
 
-								<input type="submit" value="Submit" 
-								
-								style=
-								
-								"background-color:rgb(7, 165, 163);
+							<input type="submit" value="Submit">
 
-								color: #ffffff;
+							<input type="reset" value="Reset">
 
-								font-size: 13px;
+						</form>	
 
-								padding-left: 10px; 
-								padding-right: 10px;
-								">
-								<input type="reset" value="Reset"
-								
-								style=
-								
-								"background-color:rgb(7, 165, 163);
-
-								color: #ffffff;
-								
-								font-size: 13px;
-								
-								padding-left: 10px; 
-								padding-right: 10px;
-								">
-							</form>	
-							
-							<div class="push"></div>
-						</div>
-
+						<br>
+						
+						<div class="push"></div>
 					</div>
-		
+
 				</div>
 		
 			</div>
-				<footer class="footer">Copyright@</footer>
+		
 		</div>
+			<footer class="footer">Copyright@</footer>
+	</div>
 </body>
 </html>

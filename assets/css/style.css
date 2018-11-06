@@ -1,68 +1,44 @@
-.Heading{
-
-	margin-left: auto;
-	margin-right: auto;
-
-	padding-left: 199px;
-	padding-bottom: 79px;
-	padding-top: 10px;
-
-
-	background-color: #ffffff;
-
-	text-align: center;
-
-	color: #999999;
-	
-	border-bottom: 2px solid #cccccc;
-
-	font-family: 'Times New Roman', Times, serif;
-}
-
-.abname{
-	float: left;
-	background-color: rgb(17, 165, 163);
-	width: 14%;
-	color: #ffffff;
-}
-
-.ababout{
-float: left;
-width: 10%;
-border-right: 2px solid #cccccc;
-padding-left: 400px;
-margin-top: 25px;
-height: 25px;
-}
-
-.abcontact{
-float: left;
-width: 10%;
-border-right: 2px solid #cccccc;
-margin-top: 25px;
-height: 25px;
-padding-left: 25px;
-}
-
-.abportfolio{
-float: left;
-width: 10%;
-border-right: 2px solid #cccccc;
-margin-top: 25px;
-height: 25px;
-padding-left: 25px;
-}
-
-a{
-	color: #999999;
+.header-container {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #F2F2F2;
+	padding: 2.3em 0;
+ }
+ 
+ .logo a{
+	margin-left: 10%;
+	display: inline;
+	font-size: 2em;
 	text-decoration: none;
-}
+	color: #000000;
+	font-weight: bold;
+ }
+
+ header ul li {
+		 display: inline;
+		 padding: 0 1.4em 0 0;
+		 font-size: 0.9em;
+ }
+ 
+ header ul li a {
+	text-decoration: none;
+	color: #7D7C7D;
+ }
+ 
+ li a.active {
+	color: #000000;
+	border-bottom: 2px solid #000000;
+	font-weight: 300;
+ }
+ 
+ li a:hover {
+	color: #B6B6B6;
+ }
 
 .wrapper{
 	margin-left: auto;
 	margin-right: auto;
-
-	max-width: 960px;
+	display: flex;
 
 	padding-right: 10px;
 	padding-left: 10px;
@@ -70,71 +46,38 @@ a{
 	color: #666666;
 	background-color: #ffffff;
 
-	border: 2px solid #dddddd;
+	border: 2px solid #F2F2F2;
 
-	font-size: 18px;
+	font-size: 12px;
 
 	line-height: 2;
+
 }
 
-.meimg{
-	float: left;
+.meImg{
+
+	display: flex;
+	justify-content: center;
 
 	padding: 10px;
 }
 
-
-
-.img1{
-	position: relative;
-
-	width: 50%;
-}
-
-.img2{
-	position: relative;
-
-	width: 50%;
-}
-
 .img1 img{
-	width: 50%;
+	width: 75%;
 	height: auto;
 }
 
 .img2 img{
-	width: 50%;
+	width: 75%;
 	height: auto;
 }
-
-.imgs .btn{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-172%, -48%);
-	-ms-transform: translate(-50%, -50%);
-
-	color: #ffffff;
-	background-color: rgb(17, 165, 163);
-
-	font-size: 16px;
-
-	padding: 12px 24px;
-
-	border: none;
-
-	cursor: pointer;
-
-	border-radius: 10px;
-}
-
 
 .body{
 	background-image: url(../images/what-the-hex/what-the-hex.png);
 	font-family: Arial, Helvetica, sans-serif;
 	padding: 30px;
 	min-height: calc(100vh - 70px);
-	/* margin-bottom: -50px; */
+	/* margin-bottom: -50px; */ 
 }
 
 .sub{
@@ -156,3 +99,72 @@ a{
 
 	font-family: 'Times New Roman', Times, serif;
 }
+
+form{
+	margin: auto;
+	width: 100%;
+}
+
+/* MEDIA QUERIES AREA */
+@media screen and (min-width : 600px) {
+	.header-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+ 
+ .logo a{
+	margin-left: 2.3em
+	}
+ 
+	nav {
+		align-self: center;
+		margin: 0 0.8em 0 0;
+	}
+
+
+
+	.wrapper{
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: auto;
+	
+		max-width: 960px;
+		min-height: 100%;
+
+		display: flex;
+		flex-wrap: wrap;
+
+		padding-right: 10px;
+		padding-left: 10px;
+	
+		color: #666666;
+		background-color: #ffffff;
+	
+		border: 2px solid #dddddd;
+	
+		font-size: 18px;
+	
+		line-height: 2;
+	
+	}
+
+	.meImg{
+
+		display: flex;
+		justify-content: flex-start;
+	
+		padding: 10px;
+	}
+
+	.footer{
+		/* height: 50px; */
+		text-align: center;
+	
+		background-color: #666666;
+		color: #ffffff;
+	
+		border-top: 4px solid rgb(18, 143, 141);
+	
+		font-family: 'Times New Roman', Times, serif;
+	}
+ }
